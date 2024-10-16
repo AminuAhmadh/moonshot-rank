@@ -20,6 +20,7 @@ def send_telegram_message(message):
         "chat_id": chat_id,
         "text": message
     }
+    print("sending telegram message...")
     requests.post(telegram_url, data=data)
 
 # Function to scrape the ranking
